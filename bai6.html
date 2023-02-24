@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            padding-top: 3px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+        
+        .six {
+            background-color: yellow;
+            padding: 40px;
+        }
+        
+        .four {
+            background-color: orangered;
+            padding-top: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 3px;
+        }
+        
+        .nine {
+            background-color: yellow;
+        }
+        
+        .table {
+            border-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table" border="1">
+        <tr>
+            <td>1</td>
+            <td colspan="4">2</td>
+
+        </tr>
+        <tr>
+            <td rowspan="3">3</td>
+            <td class="four">4</td>
+            <td class="four">5</td>
+            <td class="six" rowspan="2" colspan="2">6</td>
+
+        </tr>
+        <tr>
+            <td class="four">7</td>
+            <td class="four">8</td>
+
+        </tr>
+        <tr>
+            <td class="nine" colspan="2">9</td>
+            <td class="nine" colspan="2">10</td>
+
+        </tr>
+    </table>
+</body>
+
+</html>
